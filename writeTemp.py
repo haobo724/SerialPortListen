@@ -61,6 +61,9 @@ def watchingthread(flag):
     keyboard.wait('s')
     print('Stopping...')
     stopEvent.set()
+    
+def testgit():
+    print('test git')
 
 stopEvent = threading.Event()
 
