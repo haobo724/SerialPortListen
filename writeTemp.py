@@ -4,6 +4,15 @@ import serial
 import matplotlib.pyplot as plt
 import threading,keyboard
 
+
+import pandas as pd
+
+
+a = pd.read_json()
+
+
+
+
 def plot_temperature_data(filename):
     with open(filename,'r',newline='',encoding='utf-8') as csvfile:
         reader = csv.reader(csvfile)
@@ -61,9 +70,6 @@ def watchingthread(flag):
     keyboard.wait('s')
     print('Stopping...')
     stopEvent.set()
-    
-def testgit():
-    print('test git')
 
 stopEvent = threading.Event()
 
