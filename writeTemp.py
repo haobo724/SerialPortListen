@@ -3,15 +3,7 @@ import time,os
 import serial
 import matplotlib.pyplot as plt
 import threading,keyboard
-
-
-import pandas as pd
-
-
-a = pd.read_json()
-
-
-
+import numpy as np
 
 def plot_temperature_data(filename):
     with open(filename,'r',newline='',encoding='utf-8') as csvfile:
